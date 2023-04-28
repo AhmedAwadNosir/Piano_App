@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:piano_app/Views/flutterTuneView.dart';
 import 'package:piano_app/Views/homeView.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class PiaonApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         HomeView.id: (context) => const HomeView(),
+        FlutterTune.id:(context) => FlutterTune(),
       },
       initialRoute: HomeView.id,
     );

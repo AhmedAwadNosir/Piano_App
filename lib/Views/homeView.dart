@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:piano_app/Views/flutterTuneView.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -37,6 +38,7 @@ class _HomeViewState extends State<HomeView> {
             child: ElevatedButton(
               onPressed: () {
                 setState(() {
+                  Navigator.pushNamed(context, FlutterTune.id);
                 });
               },
               style: ElevatedButton.styleFrom(
